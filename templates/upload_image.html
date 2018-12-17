@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="block0">
+		<ul style="list-style-position: initial; list-style-image: initial; font-size: 14px; line-height: 32px; font-weight: bold;">
+			<li style="clear: both;"><span style="color: #ff6600;"><a style="color: #ff6600;" href="/">Home Page</a></span></li>
+			<li style="clear: both;"><span style="color: #ff6600;"><a style="color: #ff6600;" href="/upload_image">Upload new image</a></span></li>
+			<li style="clear: both;"><span style="color: #ff6600;"><a style="color: #ff6600;" href="/cam_rec">New webcam capture</a></span></li>
+		</ul>
+</div>
+ 
+<div class="block1">
+	<h1 style="color: #5e9ca0;"><span style="color: #000080;">Upload image</span></h1>
+		<!-- <h2 style="color: #2e6c80;"><span style="color: #000080;">Parameters:</span></h2> -->
+		<form action="" method="post" enctype = "multipart/form-data">
+    		Select image to upload:
+    		<input type="file" name="file">
+    		<input type="submit" name="submit">
+		</form>
+	<p><strong>&nbsp;</strong></p>
+</div>
+{% endblock %}
